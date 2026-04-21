@@ -20,7 +20,7 @@ layers:
   - {t: J, h: Cursor Layer}
   - K
   - L
-  - {t: SEMI, h: Mouse Layer}
+  - {t: ;, h: Mouse Layer}
   - Z
   - X
   - C
@@ -36,12 +36,12 @@ layers:
   - LEFT WIN
   - {t: SPACE, h: LCTRL}
   - LEFT ALT
-  - {t: DEL, h: Symbol Layer}
+  - {t: DEL, h: Mark Layer}
   - {t: BS, h: LEFT SHIFT}
   - {t: ENTER, h: Number Layer}
-  - ''
-  - LANG2
-  - LANG1
+  - Sft+Gui+4
+  - LANGUAGE 2
+  - LANGUAGE 1
   - {t: ESC, h: Device Layer}
   Number Layer:
   - '1'
@@ -61,18 +61,18 @@ layers:
   - F5
   - '-'
   - '='
-  - LBKT
-  - RBKT
-  - BSLH
+  - '0x89'
+  - ;
+  - ''''
   - F6
   - F7
   - F8
   - F9
   - F10
-  - '`'
-  - SQT
-  - SEMI
-  - _
+  - ']'
+  - \
+  - '['
+  - Sft+0x87
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -86,35 +86,35 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Symbol Layer:
+  Mark Layer:
   - '!'
-  - DQT
+  - AT
   - '#'
-  - DLLR
-  - PRCNT
-  - AMPS
-  - SQT
-  - LPAR
-  - RPAR
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - (
   - ''
   - F11
   - F12
   - F13
   - F14
   - F15
+  - _
   - +
-  - '~'
-  - '|'
+  - Sft+0x89
   - ':'
-  - '*'
+  - '"'
   - F16
   - F17
   - F18
   - F19
   - F20
-  - LBRC
-  - RBRC
-  - '`'
+  - '}'
+  - '|'
+  - '{'
   - ''
   - ''
   - {t: ▽, type: trans}
@@ -259,6 +259,36 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Auto Mouse Layer:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Alt+←
+  - Alt+→
+  - '&mkp MB2'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&mkp MB1'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -269,35 +299,5 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
