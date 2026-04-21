@@ -16,18 +16,6 @@
 };
 
 / {
-    macros {
-        emoji: emoji_macro {
-            compatible = "zmk,behavior-macro";
-            label = "EMOJI";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press &kp CAPSLOCK>,
-                <&macro_tap &kp E>,
-                <&macro_release &kp CAPSLOCK>;
-        };
-    };
-
     behaviors {
         encoder_msc: sensor_rotate_msc {
             compatible = "zmk,behavior-sensor-rotate-var";
@@ -46,6 +34,9 @@
     keymap {
         compatible = "zmk,keymap";
 
+        // ======================
+        // Layer 0 (修正)
+        // ======================
         default_layer {
             display-name = "Default Layer";
             bindings = <
@@ -58,6 +49,9 @@
             sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
         };
 
+        // ======================
+        // Layer 1 (修正)
+        // ======================
         layer_1 {
             display-name = "Number Layer";
             bindings = <
@@ -70,16 +64,22 @@
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
         };
 
+        // ======================
+        // Layer 2 (修正)
+        // ======================
         layer_2 {
             display-name = "Symbol Layer";
             bindings = <
                 &kp EXCL      &kp DQT       &kp HASH      &kp DLLR      &kp PRCNT                  &kp AMPS         &kp SQT        &kp LPAR      &kp RPAR      &none
                 &kp F11       &kp F12       &kp F13       &kp F14       &kp F15                    &kp PLUS         &kp TILDE      &kp PIPE      &kp COLON     &kp ASTERISK
                 &kp F16       &kp F17       &kp F18       &kp F19       &kp F20                    &kp LBRC         &kp RBRC       &kp GRAVE     &none         &none
-                &trans        &trans        &trans        &trans        &trans   &trans    &trans  &trans           &trans         &trans        &trans        &trans
+                &trans        &trans        &trans        &trans        &trans    &trans   &trans  &trans           &trans         &trans        &trans        &trans
             >;
         };
 
+        // ======================
+        // Layer 3 (修正)
+        // ======================
         layer_3 {
             display-name = "Cursor Layer";
             bindings = <
@@ -90,6 +90,9 @@
             >;
         };
 
+        // ======================
+        // Layer 4 (修正)
+        // ======================
         layer_4 {
             display-name = "Device Layer";
             bindings = <
@@ -100,23 +103,29 @@
             >;
         };
 
+        // ======================
+        // Layer 5（そのまま）
+        // ======================
         layer_5 {
             display-name = "Mouse Layer";
             bindings = <
-                &trans           &trans             &trans                &trans                  &trans                                                 &kp SPACE    &kp RG(LEFT)     &kp RG(RIGHT)      &mkp MB3            &trans
-                &mkp MB5         &trans             &trans                &trans                  &trans                                                 &kp LG(UP)   &mkp MB1         &mkp MB2           &msc SCRL_UP        &msc SCRL_DOWN
-                &mkp MB4         &trans             &trans                &trans                  &trans                                                 &kp LG(DOWN) &kp LEFT         &kp UP             &kp RIGHT           &trans
-                &trans           &trans             &trans                &trans                  &trans            &trans              &trans           &trans       &trans           &kp DOWN           &trans              &kp LG(W)
+                &none    &none    &none    &none    &none                     &kp LA(LEFT)   &kp LA(RIGHT)   &mkp MB2      &none         &none
+                &kp F21  &kp F22  &kp F23  &kp F24  &none                     &kp LCTRL      &mkp MB1        &none         &none         &none
+                &none    &none    &none    &none    &none                     &kp GRAVE      &none           &none         &none         &none
+                &trans   &trans   &trans   &trans   &trans  &trans    &trans  &trans         &trans         &trans        &trans        &trans
             >;
         };
 
+        // ======================
+        // Layer 6（完全据え置き）
+        // ======================
         layer_6 {
             display-name = "Auto Mouse Layer";
             bindings = <
-                &none   &none   &none   &none   &none                     &kp LA(LEFT)   &kp LA(RIGHT)   &mkp MB2      &none         &none
-                &none   &none   &none   &none   &none                     &none          &mkp MB1        &none         &none         &none
-                &none   &none   &none   &none   &none                     &none          &none           &none         &none         &none
-                &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans         &trans        &none         &none
+                &trans           &trans             &trans                &trans                  &trans                                                 &trans       &trans           &trans             &trans              &trans
+                &trans           &trans             &trans                &trans                  &trans                                                 &trans       &trans           &trans             &trans              &trans
+                &trans           &trans             &trans                &trans                  &trans                                                 &trans       &trans           &trans             &trans              &trans
+                &trans           &trans             &trans                &trans                  &trans            &trans              &trans           &trans       &trans           &trans             &trans              &trans
             >;
         };
 
